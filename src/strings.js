@@ -211,9 +211,9 @@ define([
         }
 
         // Remove invalid chars
-        str = str.replace(/[^a-z0-9 -]/g, '') 
+        //str = str.replace(/[^a-z0-9 -]/g, '') 
         // Collapse whitespace and replace by -
-        .replace(/\s+/g, '-') 
+        str = str.replace(/\s+/g, '-') 
         // Collapse dashes
         .replace(/-+/g, '-'); 
 
