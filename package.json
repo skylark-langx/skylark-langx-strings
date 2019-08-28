@@ -1,0 +1,29 @@
+{
+  "name": "skylark-langx-string",
+  "version": "0.9.0",
+  "description": "The skylark JavaScript language extension library.",
+  "main": "./index",
+  "scripts": {
+    "build": "sbundle build ."
+  },
+  "homepage": "www.skylarkjs.org",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skylarklangx/skylark-langx-string.git"
+  },
+  "keywords": [
+    "skylark",
+    "skylarkjs",
+    "javacript",
+    "language extension"
+  ],
+  "author": "Hudaokeji Co.,Ltd",
+  "license": "MIT",
+  "bugs": "https://github.com/skylarklangx/skylark-langx/issues",
+  "dependencies": {
+    "skylark-langx-ns": "https://github.com/skylarklangx/skylark-langx-ns#master"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
