@@ -1,5 +1,5 @@
 /**
- * skylark-langx-string - The skylark JavaScript language extension library.
+ * skylark-langx-strings - The skylark JavaScript language extension library.
  * @author Hudaokeji Co.,Ltd
  * @version v0.9.0
  * @link www.skylarkjs.org
@@ -86,7 +86,7 @@
 
 })(function(define,require) {
 
-define('skylark-langx-string/strings',[
+define('skylark-langx-strings/strings',[
     "skylark-langx-ns"
 ],function(skylark){
     // add default escape function for escaping HTML entities
@@ -375,13 +375,13 @@ define('skylark-langx-string/strings',[
 	}) ; 
 
 });
-define('skylark-langx-string/main',[
+define('skylark-langx-strings/main',[
 	"./strings"
 ],function(strings){
 	return strings;
 });
-define('skylark-langx-string', ['skylark-langx-string/main'], function (main) { return main; });
+define('skylark-langx-strings', ['skylark-langx-strings/main'], function (main) { return main; });
 
 
 },this);
-//# sourceMappingURL=sourcemaps/skylark-langx-string.js.map
+//# sourceMappingURL=sourcemaps/skylark-langx-strings.js.map
