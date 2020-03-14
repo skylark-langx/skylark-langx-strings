@@ -363,7 +363,7 @@ define('skylark-langx-strings/strings',[
 
         slugify : slugify,
 
-        template : template,
+        //template : template,
 
         trim: trim,
 
