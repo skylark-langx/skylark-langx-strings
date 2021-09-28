@@ -87,8 +87,7 @@
 })(function(define,require) {
 
 define('skylark-langx-strings/strings',[
-    "skylark-langx-ns"
-],function(skylark){
+],function(){
     // add default escape function for escaping HTML entities
     var escapeCharMap = Object.freeze({
         '&': '&amp;',
@@ -351,7 +350,7 @@ define('skylark-langx-strings/strings',[
         return str;
     }
 
-	return skylark.attach("langx.strings",{
+    return {
         camelCase: function(str) {
             return str.replace(/-([\da-z])/g, function(a) {
                 return a.toUpperCase().replace('-', '');
@@ -394,7 +393,7 @@ define('skylark-langx-strings/strings',[
         upperFirst: function(str) {
             return str.charAt(0).toUpperCase() + str.slice(1);
         }
-	}) ; 
+    }; 
 
 });
 define('skylark-langx-strings/base64',[

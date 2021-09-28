@@ -1,6 +1,5 @@
 define([
-    "skylark-langx-ns"
-],function(skylark){
+],function(){
     // add default escape function for escaping HTML entities
     var escapeCharMap = Object.freeze({
         '&': '&amp;',
@@ -263,7 +262,7 @@ define([
         return str;
     }
 
-	return skylark.attach("langx.strings",{
+    return {
         camelCase: function(str) {
             return str.replace(/-([\da-z])/g, function(a) {
                 return a.toUpperCase().replace('-', '');
@@ -306,6 +305,6 @@ define([
         upperFirst: function(str) {
             return str.charAt(0).toUpperCase() + str.slice(1);
         }
-	}) ; 
+    }; 
 
 });
