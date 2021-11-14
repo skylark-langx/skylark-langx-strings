@@ -5,5 +5,5 @@
  * @link www.skylarkjs.org
  * @license MIT
  */
-define(["skylark-langx-ns"],function(n){return n.attach("langx.strings")});
-//# sourceMappingURL=sourcemaps/strings.js.map
+define(["./strings"],function(r){return r.lowerFirst=function(r){return r.charAt(0).toLowerCase()+r.slice(1)}});
+//# sourceMappingURL=sourcemaps/lower-first.js.map

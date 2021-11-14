@@ -23,6 +23,10 @@
   "exports": {
     "./": "./dist/uncompressed/skylark-langx-strings/"
   },
+  "files": [
+    "dist/",
+    "skins/"
+  ],
   "dependencies": {
     "skylark-langx-ns": "git+https://github.com/skylark-langx/skylark-langx-ns.git"
   },

@@ -1,6 +1,20 @@
 define([
 	"./strings",
-	"./base64"
+	"./base64",
+	"./camel-case",
+	"./dasherize",
+	"./escape-html",
+	"./generate-uuid",
+	"./lower-first",
+	"./ltrim",
+	"./rtrim",
+	"./serialize-value",
+	"./slugify",
+	"./substitute",
+	"./trim-null",
+	"./unique-id",
+	"./upper-first",
+	"./words"
 ],function(strings){
 	return strings;
 });
