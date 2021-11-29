@@ -273,6 +273,28 @@ define('skylark-langx-strings/dasherize',[
 	
 	return strings.dasherize = dasherize;
 });
+define('skylark-langx-strings/deserialize-value',[
+	"./strings"
+],function(strings){
+    function deserializeValue(value) {
+        try {
+            return value ?
+                value == "true" ||
+                (value == "false" ? false :
+                    value == "null" ? null :
+                    +value + "" == value ? +value :
+                    /^[\[\{]/.test(value) ? JSON.parse(value) :
+                    value) : value;
+        } catch (e) {
+            return value;
+        }
+    }
+
+
+
+	
+	return strings.deserializeValue = deserializeValue;
+});
 define('skylark-langx-strings/escape-html',[
 	"./strings"
 ],function(strings){
@@ -599,6 +621,7 @@ define('skylark-langx-strings/main',[
 	"./base64",
 	"./camel-case",
 	"./dasherize",
+	"./deserialize-value",
 	"./escape-html",
 	"./generate-uuid",
 	"./lower-first",

@@ -3,6 +3,7 @@ define([
 	"./base64",
 	"./camel-case",
 	"./dasherize",
+	"./deserialize-value",
 	"./escape-html",
 	"./generate-uuid",
 	"./lower-first",
