@@ -5,5 +5,5 @@
  * @link www.skylarkjs.org
  * @license MIT
  */
-define(["./strings","./base64","./camel-case","./dasherize","./deserialize-value","./escape-html","./generate-uuid","./lower-first","./ltrim","./rtrim","./serialize-value","./slugify","./substitute","./trim-null","./unique-id","./upper-first","./words"],function(e){return e});
+define(["./strings","./base64","./camel-case","./dasherize","./deserialize-value","./escape-html","./generate-uuid","./lower-first","./ltrim","./rtrim","./serialize-value","./slugify","./substitute","./trim","./trim-null","./unique-id","./upper-first","./words"],function(e){return e});
 //# sourceMappingURL=sourcemaps/main.js.map

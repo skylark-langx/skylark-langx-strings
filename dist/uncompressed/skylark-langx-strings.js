@@ -464,6 +464,15 @@ define('skylark-langx-strings/substitute',[
 
 	return strings.substitute = substitute;
 });
+define('skylark-langx-strings/trim',[
+	"./strings"
+],function(strings){
+    function trim(str) {
+        return str == null ? "" : String.prototype.trim.call(str);
+    }
+	
+	return strings.trim = trim;
+});
 define('skylark-langx-strings/trim-null',[
 	"./strings"
 ],function(strings){
@@ -630,6 +639,7 @@ define('skylark-langx-strings/main',[
 	"./serialize-value",
 	"./slugify",
 	"./substitute",
+	"./trim",
 	"./trim-null",
 	"./unique-id",
 	"./upper-first",
