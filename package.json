@@ -24,6 +24,7 @@
     "./": "./dist/uncompressed/skylark-langx-strings/"
   },
   "files": [
+    "index.js",
     "dist/",
     "skins/"
   ],
