@@ -12,6 +12,7 @@ define([
 	"./serialize-value",
 	"./slugify",
 	"./substitute",
+	"./template",
 	"./trim",
 	"./trim-null",
 	"./unique-id",
